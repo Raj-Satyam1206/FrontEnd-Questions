@@ -6,7 +6,7 @@
   border-radius: 5px;
 }
 
-#progress-div {
+#progress-bar {
   height: 100%;
   width: 0%;
   transition: width 0.02s linear;
