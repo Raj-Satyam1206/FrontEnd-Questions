@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+}
+
+.accordion-icon {
+  border: solid black;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  transform: translateY(-2px) rotate(45deg);
+  border-width: 0 2px 2px 0;
+}
+
+.accordion-icon--rotated {
+  transform: translateY(2px) rotate(-135deg);
+}
