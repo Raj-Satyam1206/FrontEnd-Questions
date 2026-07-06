@@ -1,13 +1,10 @@
 export default function debounce(func, wait) {
-  let timer=null;
+  let timer;
   function debounced(...args){
-
-    let context = this;
-   
     clearTimeout(timer);
 
     timer =  setTimeout(()=>{
-      func.apply(context , args);
+      func.apply(this , args);
     },wait);
   }
 
@@ -23,6 +20,6 @@ export default function debounce(func, wait) {
         timer = null;
       }
   }
-
+ 
   return debounced;
 }

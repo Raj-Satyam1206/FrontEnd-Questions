@@ -1,7 +1,7 @@
 // Map the url
 const longToShort = {};
 
-const BASE_URL = "https://sho.rt/" ;
+const BASE_URL = "https://sho.rt/";
 
 
 function createShortCode(){
@@ -11,6 +11,8 @@ function createShortCode(){
     for(let i=97; i<=122; i++)  chars.push(String.fromCharCode(i));
     for(let i=65; i<=90; i++)   chars.push(String.fromCharCode(i));
     for(let i=48; i<=57; i++)   chars.push(String.fromCharCode(i));
+
+    //const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     
     
     let code="";
@@ -20,7 +22,6 @@ function createShortCode(){
     
     return code;
 }
-
 
 function shortenURL(longURL){
     //check if the shortened URL already exists
@@ -39,4 +40,4 @@ function shortenURL(longURL){
 
 const longURL = "https://www.example.com/sdsef/sdsf/";
 const short = shortenURL(longURL);
-console.log(`Short URL : ${short}`);
+console.log("Short URL : " ,  short);

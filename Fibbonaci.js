@@ -8,5 +8,4 @@ function fibbo(n){
     }
     return arr;
 }
-
 console.log(fibbo(10));
