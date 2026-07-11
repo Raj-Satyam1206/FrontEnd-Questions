@@ -31,7 +31,7 @@ const Accordion = () => {
     
     return(
         <>
-            {sections.map((section , index) => {
+            {sections.map((section , index) => (
                 <div key={index}>
                     <div onClick = {() => toggle(index)}
                         style={{cursor:'pointer' , display:'flex' , justifyContent:'space-between' , alignItems: 'center'}}
@@ -50,7 +50,7 @@ const Accordion = () => {
                     )}
                     
                 </div>
-            })}
+            ))}
         </>
     );
 }
