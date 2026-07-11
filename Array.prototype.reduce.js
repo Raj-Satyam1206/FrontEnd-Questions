@@ -4,14 +4,14 @@ Array.prototype.myReduce = function(callbackFn , initialValue){
     // It's not a copy of the array, but a reference to it.
     const array = this;
 
-    let accumulator = 0;
+    let accumulator = initialValue;
 
     if(array.length === 0) throw new Error("Empty array");
 
-    // if initial value is given
-    if(initialValue){
-        accumulator = initialValue;
-    }
+    // // if initial value is given
+    // if(initialValue){
+    //     accumulator = initialValue;
+    // }
 
     for(let i = 0 ; i < array.length; i++)
     {
