@@ -33,3 +33,35 @@ func.myCall(obj1);
 func.myCall(obj2);
 
 //Somehow , we have to make "func" a part of obj1, so that when the function invokes, this refers to obj1
+
+
+
+
+
+
+/*
+function multiplyAge(multiplier = 1) {
+  return this.age * multiplier;
+}
+
+Function.prototype.myCall = function (thisArg, ...args) {
+  thisArg.tempFn = this;
+  const result = thisArg.tempFn(...args);
+
+  delete thisArg.tempFn;
+  return result;
+};
+
+const mary = {
+  age: 21,
+};
+
+const john = {
+  age: 42,
+};
+
+console.log(multiplyAge.myCall(mary)); // 21
+console.log(multiplyAge.myCall(john, 2)); // 84
+
+
+*/
